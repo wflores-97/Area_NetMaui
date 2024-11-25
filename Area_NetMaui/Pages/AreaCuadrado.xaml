@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Area_NetMaui.Pages.AreaCuadrado"
+             Title="Area Cuadrado">
+    <VerticalStackLayout Padding="30">
+
+        <Label Text="Ingrese el valor del lado #1"/>
+        <Entry x:Name="N1" Keyboard="Numeric" Placeholder="Lado #1" />
+
+        <Label Text="Ingrese el valor del lado #2" Padding="20"/>
+        <Entry x:Name="N2" Keyboard="Numeric" Placeholder="Lado #2" />
+
+        <Label Text="Resultado" Margin="20"/>
+        <Entry x:Name="Resultado" IsReadOnly="True"/>
+
+
+        <Button x:Name="btnCalcular" Text="Calcular" Background="LightGreen" Margin="10" Clicked="btnCalcular_Clicked"/>
+        <Button x:Name="btnLimpiar" Text="Limpiar" Background="OrangeRed" Margin="10" Clicked="btnLimpiar_Clicked"/>
+
+    </VerticalStackLayout>
+</ContentPage>

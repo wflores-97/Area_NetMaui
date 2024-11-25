@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Area_NetMaui.Pages.AreaRectangulo"
+             Title="Area Rectangulo">
+    <VerticalStackLayout Padding="30">
+
+        <Label Text="Ingrese el valor del Ancho (cm)"  Padding="20"/>
+        <Entry x:Name="N1" Keyboard="Numeric" Placeholder="Ancho" />
+
+        <Label Text="Ingrese el valor de la altura (cm)" Padding="20"/>
+        <Entry x:Name="N2" Keyboard="Numeric" Placeholder="Altura" />
+
+        <Label Text="Resultado" Margin="20"/>
+        <Entry x:Name="Resultado" IsReadOnly="True"/>
+
+
+        <Button x:Name="btnCalcular" Text="Calcular" Background="LightGreen" Margin="10" Clicked="btnCalcular_Clicked"/>
+        <Button x:Name="btnLimpiar" Text="Limpiar" Background="OrangeRed" Margin="10" Clicked="btnLimpiar_Clicked"/>
+
+    </VerticalStackLayout>
+</ContentPage>

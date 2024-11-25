@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Area_NetMaui.Pages.AreaCirculo"
+             Title="Area Circulo">
+    <VerticalStackLayout Padding="30">
+        <Label Text="Ingrese el radio (cm)" Padding="10"/>
+        <Entry Placeholder="Radio" x:Name="Radio"/>
+
+        <Label Padding="10" Text="Resultado"/>
+        <Entry IsReadOnly="True" x:Name="Resultado"/>
+
+        <Button Text="Calcular" Background="LightGreen" Clicked="BtnCalcular_Clicked" x:Name="BtnCalcular" Margin="15"/>
+        <Button Text="Limpiar" Background="OrangeRed" Clicked="BtnLimpiar_Clicked" x:Name="BtnLimpiar" Margin="15"/>
+    </VerticalStackLayout>
+</ContentPage>
